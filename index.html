@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div>
+            <h1>
+                Jogo da velha
+            </h1>
+        </div>
+    </header>
+    <div class="players-bar">
+        Barra
+    </div>
+    <div class="container-jogo">
+        <div class="bloco">
+            <div class="line">
+                <span class="quadrado" id="a1" onclick="vezDeJogar('a1')"></span>
+                <span class="quadrado" id="a2" onclick="vezDeJogar('a2')"></span>
+                <span class="quadrado" id="a3" onclick="vezDeJogar('a3')"></span>
+            </div>
+            <div class="line">
+                <span class="quadrado" id="b1" onclick="vezDeJogar('b1')"></span>
+                <span class="quadrado" id="b2" onclick="vezDeJogar('b2')"></span>
+                <span class="quadrado" id="b3" onclick="vezDeJogar('b3')"></span>
+            </div>
+            <div class="line">
+                <span class="quadrado" id="c1" onclick="vezDeJogar('c1')"></span>
+                <span class="quadrado" id="c2" onclick="vezDeJogar('c2')"></span>
+                <span class="quadrado" id="c3" onclick="vezDeJogar('c3')"></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

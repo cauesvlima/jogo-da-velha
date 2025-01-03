@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", serif;
+    color: white;
+}
+.container{
+    background-color: #6e5c62;
+    height: 100vh;
+}
+
+header div{
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    align-items: center;
+}
+h1{
+
+}
+
+.players-bar{
+    background-color: red;
+    height: 4rem;
+}
+.container-jogo{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.bloco{
+    height:30rem;
+    width: 30rem;
+    background-color: #615458;
+    border-radius: 1.5rem;
+}
+
+.line{ 
+    height: 10rem;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado{
+    box-sizing: border-box;
+    border: solid 10px #4c4347;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 0.75rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+.quadrado img{
+
+}
+
+.quadrado:hover{
+
+    transition: 0.2s;
+    border: solid 15px #4c4347;
+    border-radius: 1rem;
+    border-bottom:solid 25px #4c4347;
+    cursor: pointer;
+}
