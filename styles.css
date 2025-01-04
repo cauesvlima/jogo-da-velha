@@ -63,6 +63,5 @@ h1{
     transition: 0.2s;
     border: solid 15px #4c4347;
     border-radius: 1rem;
-    border-bottom:solid 25px #4c4347;
     cursor: pointer;
 }
