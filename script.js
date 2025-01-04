@@ -15,25 +15,30 @@ function vezDeJogar(quadrado){
     if(player1.escolhas.includes(quadrado) || (player2.escolhas.includes(quadrado))){
         return;
     }
+    const atual = document.getElementById('atual')
     if(player1.jogadas>player2.jogadas){
+        atual.innerHTML='x'
         player2.escolhas[player2.jogadas] = quadrado;
         player2.jogadas++;
         const x = document.getElementById(quadrado);
         x.innerHTML="<img src='assets/o.png'>"
         setTimeout(() => {
             if (verificaVitória(player2)) {
-                alert("ganhou");
+                alert("O Venceu!");
+                location.reload();
             }
         }, 50); 
     }
     else{
+        atual.innerHTML='o'
         player1.escolhas[player1.jogadas] = quadrado;
         player1.jogadas++;
         const x = document.getElementById(quadrado);
         x.innerHTML="<img src='assets/x2.png'>";
         setTimeout(() => {
             if (verificaVitória(player1)) {
-                alert("ganhou");
+                alert("X venceu!");
+                location.reload();
             }
         }, 50);  
     }
