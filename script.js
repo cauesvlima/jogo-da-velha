@@ -29,6 +29,15 @@ function vezDeJogar(quadrado){
             }
         }, 50); 
     }
+    else if(player1.jogadas + player2.jogadas==8){
+        const x = document.getElementById(quadrado);
+        x.innerHTML="<img src='assets/o.png'>"
+        setTimeout(() => {
+            
+                alert("Deu velha!");
+                location.reload();
+        }, 50); 
+    }
     else{
         atual.innerHTML='o'
         player1.escolhas[player1.jogadas] = quadrado;
